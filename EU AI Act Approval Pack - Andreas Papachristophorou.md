@@ -17,6 +17,7 @@
 | 3 | A cruise company wants to launch an AI chatbot on its booking portal to help passengers choose shore excursions. Customers type their preferences, budget, mobility needs, travel style, and available time, and the chatbot recommends excursions from the company’s existing catalogue. If no suitable option is found, the chatbot may suggest a custom self-guided itinerary. The people affected are cruise passengers making travel choices. The user can choose to allow automatic booking. The experience should be seamless, as if customers were chatting with a human travel advisor. | Limited risk | The system is an AI chatbot that interacts directly with customers and gives personalised travel recommendations, so the main AI Act obligation is to clearly inform users that they are interacting with AI. |
 | 4 | A travel content creator wants an AI assistant that reviews their own travel itinerary, notes, photos, and draft captions to suggest more engaging social media posts. The system proposes caption ideas, hashtags, posting times, and optional edits to the creator’s own text. It does not automatically publish content. The creator reviews and edits every suggestion before posting. If other people appear in photos or interviews, the creator is responsible for consent and privacy checks. | Minimal risk | The system only helps a content creator draft and improve social media posts, with human review before publishing, and does not make decisions affecting people’s rights, safety, employment, education, essential services, or legal status. |
 
+## Briefs transmited to the consultant partner. 
 
 ### Case 1
 
@@ -33,6 +34,18 @@ A cruise company wants to launch an AI chatbot on its booking portal to help pas
 ### Case 4
 
 A travel content creator wants an AI assistant that reviews their own travel itinerary, notes, photos, and draft captions to suggest more engaging social media posts. The system proposes caption ideas, hashtags, posting times, and optional edits to the creator’s own text. It does not automatically publish content. The creator reviews and edits every suggestion before posting. If other people appear in photos or interviews, the creator is responsible for consent and privacy checks.
+
+---
+## Cases received from partner as client for my review 
+
+### Partner Case 1
+Our loan approval team is drowning in paperwork. We want an AI that takes a look at a customer's credit history, income, and background, and then automatically decides whether to approve or deny their mortgage application. Is that something your team can handle?
+### Partner Case 2
+Our customer support team is getting the same basic questions over and over. We want to put a smart chatbot on our website homepage to answer track-and-trace shipping questions. Is that a safe project to take on?
+### Partner Case 3
+Our website keeps getting hit with spam reviews that say 'Click here to win a prize.' We want a simple AI filter in the background that flags and hides those comments before they go live. Is that going to cause a regulatory headache for us?
+### Partner Case 4
+We want to build an internal tool that scans our office cameras and monitors employee keystrokes. It should give everyone a rolling 'loyalty score.' If their score drops too low, the system automatically triggers a review for performance. Can you build this?
 
 ---
 
@@ -68,7 +81,7 @@ The four proposed AI use cases create different levels of AI Act risk. The mortg
 
 <b>Proposed architecture:</b>
 
-- Business trigger:<b> Loan Approvals</b>
+- Business trigger:<b> Client request loan approval </b>
 - Model or system behaviour:<b> Automated Scoring / Discission Support</b>
 - Human review point<b>: Final decision </b>
 - Record, logging, or disclosure layer:<b> Records tb kept for minimum 6 months</b>
@@ -201,24 +214,15 @@ The four proposed AI use cases create different levels of AI Act risk. The mortg
 
 # Phase 4 — Client discussion and final sign-off
 
-`**Pending**`
-
 ## Discussion comparison table
 
 | Case | Partner’s intended category | My inferred category | Did they match? | What was unclear or borderline? | Final recommendation after discussion |
 | --- | --- | --- | --- | --- | --- |
-| 1 |  |  | Yes / No / Partly |  |  |
-| 2 |  |  | Yes / No / Partly |  |  |
-| 3 |  |  | Yes / No / Partly |  |  |
-| 4 |  |  | Yes / No / Partly |  |  |
+| 1 | High-risk | High-risk | Partly | Partner agreed the case is high-risk but challenged that the LLM had too much decision authority and might not treat users uniformly. | Keep as high-risk. Redesign with a separate rules-based loan decision layer that the LLM does not control. The LLM should only summarise, identify missing information, and explain rule-based results for human review. |
+| 2 | Limited risk / transparency | Limited risk / transparency | Yes | No major issue. Partner approved as is. | Approve with controls: clearly label the chatbot as AI, keep it limited to tracking questions, offer human handover, and follow GDPR for personal data. |
+| 3 | Minimal risk | Minimal risk | Yes | No major issue. Partner approved as is. | Approve with light operational controls: keep spam-filter logs, allow review of false positives, and follow GDPR if user data is processed. |
+| 4 | Prohibited | Prohibited | Partly | Partner challenged whether performance measurement is already part of company culture and asked whether loyalty can be measured legally. | Deny and redesign. Keep the classification as prohibited as designed because the system uses intrusive surveillance and creates a vague loyalty score with employment consequences. A lawful redesign should avoid loyalty scoring and use only transparent, objective, job-related performance indicators with human review. |
 
 ## Closing note
 
-Write 3–5 sentences.
-
-Suggested structure:
-
-- What changed after the client discussion:
-- Which classification was most difficult:
-- What I would ask the legal team to verify:
-- What operational artifact the client needs next:
+After the client discussion, I kept the main classifications but refined the recommendations for Cases 1 and 4. For Case 1, the mortgage approval system remains high-risk, but the LLM should not make or control approval decisions; a separate rules-based loan layer should handle eligibility checks, with the LLM limited to summarising and explaining results for human review. Cases 2 and 3 were approved as originally recommended. For Case 4, I still classify the proposed loyalty-scoring system as prohibited because it relies on intrusive surveillance and vague behaviour-based scoring with possible employment consequences. A lawful redesign should avoid loyalty scoring and use only transparent, objective, job-related performance indicators with human review.
