@@ -198,3 +198,27 @@ The four proposed AI use cases create different levels of AI Act risk. The mortg
 <b>Decision: Deny and redesign</b>
 
 <b>If denied, lawful redesign option:</b><br />Redesign the system as a transparent performance-support dashboard that uses objective, job-related metrics, such as completed tasks, missed deadlines, customer support tickets, or agreed productivity goals. Do not use cameras, keystroke monitoring, or loyalty scoring. The dashboard should only support managers, not automatically trigger disciplinary reviews. Employees should be informed, data collection should be minimised, and HR should conduct any review with human judgment.
+
+# Phase 4 — Client discussion and final sign-off
+
+`**Pending**`
+
+## Discussion comparison table
+
+| Case | Partner’s intended category | My inferred category | Did they match? | What was unclear or borderline? | Final recommendation after discussion |
+| --- | --- | --- | --- | --- | --- |
+| 1 |  |  | Yes / No / Partly |  |  |
+| 2 |  |  | Yes / No / Partly |  |  |
+| 3 |  |  | Yes / No / Partly |  |  |
+| 4 |  |  | Yes / No / Partly |  |  |
+
+## Closing note
+
+Write 3–5 sentences.
+
+Suggested structure:
+
+- What changed after the client discussion:
+- Which classification was most difficult:
+- What I would ask the legal team to verify:
+- What operational artifact the client needs next:
